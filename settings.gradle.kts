@@ -24,4 +24,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "ParkV2"
 include(":app")
- 
