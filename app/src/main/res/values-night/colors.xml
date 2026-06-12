@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors (Night) -->
+    <color name="primary_color">#01819E</color>
+    <color name="splash_background">#FF000000</color>
+</resources>
