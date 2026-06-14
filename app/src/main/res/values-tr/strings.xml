@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Park</string>
+
+    <!-- Common -->
+    <string name="retry">Tekrar Dene</string>
+    <string name="back">Geri</string>
+    <string name="favorite">Favori</string>
+    <string name="available">Müsait</string>
+    <string name="closed">Kapalı</string>
+    <string name="full">Dolu</string>
+    <string name="open">Açık</string>
+    <string name="fee_prefix">Ücret: %s</string>
+    <string name="added_to_favorites">Favorilere eklendi</string>
+    <string name="removed_from_favorites">Favorilerden çıkarıldı</string>
+    <string name="park_details_not_found">Otopark detayları bulunamadı.</string>
+    <string name="empty_response_body">Boş yanıt gövdesi</string>
+    <string name="error_unknown">Bilinmeyen bir hata oluştu</string>
+    <string name="network_error">Ağ hatası</string>
+    <string name="error_with_code">Hata: %1$d %2$s</string>
+
+    <!-- Main Screen -->
+    <string name="search_placeholder">Otopark ara…</string>
+    <string name="clear_search">Temizle</string>
+    <string name="favorites_filter">Favoriler</string>
+    <string name="results_count">%d sonuç</string>
+    <string name="available_snippet">%1$d/%2$d müsait</string>
+
+    <!-- Bottom Sheet -->
+    <string name="capacity">Kapasite</string>
+    <string name="distance">Mesafe</string>
+    <string name="go_to_details">Detaylara Git</string>
+    <string name="google_maps">Google Haritalar</string>
+    <string name="distance_km">%.1f km</string>
+    <string name="distance_m">%d m</string>
+
+    <!-- Detail Screen -->
+    <string name="park_detail">Otopark Detayı</string>
+    <string name="total">Toplam</string>
+    <string name="occupied">Dolu</string>
+    <string name="occupancy">Doluluk</string>
+    <string name="address">Adres</string>
+    <string name="district">İlçe</string>
+    <string name="working_hours">Çalışma Saatleri</string>
+    <string name="free_time">Ücretsiz Süre</string>
+    <string name="hourly_fee">Saatlik Ücret</string>
+    <string name="monthly_fee">Aylık Ücret</string>
+    <string name="phone">Telefon</string>
+    <string name="pricing">Fiyatlandırma</string>
+    <string name="detailed_tariff">Detaylı Tarife</string>
+
+    <!-- Splash Screen -->
+    <string name="connection_error">Bağlantı Hatası</string>
+    <string name="please_retry">Lütfen tekrar deneyin</string>
+
+    <!-- Permissions -->
+    <string name="enable_location">Konumu Etkinleştir</string>
+    <string name="location_permission_rationale">Park Uygulaması yakındaki otoparkları göstermek ve mesafeleri hesaplamak için konumunuza ihtiyaç duyar. Bu, size en yakın otoparkı bulmanıza yardımcı olur.</string>
+    <string name="allow">İzin Ver</string>
+    <string name="not_now">Şimdi Değil</string>
+    <string name="your_location">Konumunuz</string>
+</resources>
