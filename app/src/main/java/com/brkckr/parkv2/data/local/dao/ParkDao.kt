@@ -11,16 +11,19 @@ import kotlinx.coroutines.flow.Flow
 interface ParkDao {
 
     @Query("SELECT * FROM parks")
-    suspend fun getAllParks(): List<ParkEntity>
+    fun observeParks(): Flow<List<ParkEntity>>
+
+    @Query("SELECT * FROM parks")
+    suspend fun getParks(): List<ParkEntity>
 
     @Query("SELECT * FROM parks WHERE isFavorite = 1")
-    fun getFavoriteParks(): Flow<List<ParkEntity>>
+    fun observeFavoriteParks(): Flow<List<ParkEntity>>
 
     @Query("SELECT * FROM parks WHERE parkID = :parkId")
     suspend fun getParkById(parkId: Int): ParkEntity?
 
     @Query("SELECT * FROM parks WHERE parkID = :parkId")
-    fun getParkByIdFlow(parkId: Int): Flow<ParkEntity?>
+    fun observeParkById(parkId: Int): Flow<ParkEntity?>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertParks(parks: List<ParkEntity>)
