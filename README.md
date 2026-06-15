@@ -3,29 +3,21 @@
 Discover available ISPARK parking spots, check real-time fees, and navigate to your destination with ease.
 
 ## 📱 App Showcase
-
 <div style="text-align: center;">
   <table>
-    <tr>
       <td><b>1. Splash & Pre-fetch</b></td>
       <td><b>2. Map & Pager Sync</b></td>
       <td><b>3. Detail & Navigation</b></td>
     </tr>
     <tr>
       <td>
-        <video src="" width="220" autoplay loop muted>
-          Your browser does not support the video tag.
-        </video>
+       <img width="336" height="752" alt="ss1" src="https://github.com/user-attachments/assets/21d912c9-1ef8-4732-989f-d4410feb3f5d" />
       </td>
       <td>
-        <video src="" width="220" autoplay loop muted>
-          Your browser does not support the video tag.
-        </video>
+       <img width="336" height="752" alt="ss2" src="https://github.com/user-attachments/assets/149ab03f-b345-476d-bfdd-cbb3691390ac" />
       </td>
       <td>
-        <video src="" width="220" autoplay loop muted>
-          Your browser does not support the video tag.
-        </video>
+       <img width="336" height="752" alt="ss3" src="https://github.com/user-attachments/assets/1bdc64f3-d9c4-4a50-bf1a-67852e77eba3" />
       </td>
     </tr>
   </table>
