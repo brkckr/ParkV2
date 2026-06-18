@@ -49,10 +49,16 @@ android {
         compose = true
         buildConfig = true
     }
+    testOptions {
+        unitTests.all {
+            it.useJUnitPlatform()
+        }
+    }
 }
 
 dependencies {
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.core.splashscreen)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.activity.compose)
@@ -66,31 +72,33 @@ dependencies {
     implementation(libs.kotlinx.serialization.json)
     debugImplementation(libs.androidx.ui.tooling)
 
-    // Hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
     implementation(libs.hilt.navigation.compose)
 
-    // Retrofit
     implementation(libs.retrofit)
     implementation(libs.retrofit.gson)
     implementation(libs.okhttp)
     implementation(libs.okhttp.logging)
     implementation(libs.gson)
 
-    // Room
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
     ksp(libs.room.compiler)
 
-    // Maps
     implementation(libs.maps.compose)
     implementation(libs.play.services.maps)
     implementation(libs.play.services.location)
 
-    // Permissions
     implementation(libs.accompanist.permissions)
 
-    // Coroutines
     implementation(libs.coroutines.android)
+
+    testImplementation(libs.junit.jupiter.api)
+    testRuntimeOnly(libs.junit.jupiter.engine)
+    testRuntimeOnly(libs.junit.platform.launcher)
+    testImplementation(libs.io.mockk)
+    testImplementation(libs.cash.turbine)
+    testImplementation(libs.google.truth)
+    testImplementation(libs.kotlinx.coroutines.test)
 }
